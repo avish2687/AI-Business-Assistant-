@@ -1,0 +1,14 @@
+# terraform.tfvars  ← Copy this file, fill values, keep it out of git!
+# Never commit this file — it's in .gitignore
+
+aws_region         = "ap-south-1"       # Mumbai — change as needed
+app_name           = "ai-business-assistant"
+environment        = "production"
+ec2_instance_type  = "t3.medium"        # 2 vCPU, 4GB RAM
+db_instance_class  = "db.t3.micro"      # Cheapest RDS — upgrade for prod
+
+# ⚠️  Fill these in — never commit real values
+db_password      = "YourStrongDBPassword123!"
+openai_api_key   = "sk-your-openai-key-here"
+secret_key       = "your-jwt-secret-key-here"
+domain_name      = "yourdomain.com"     # Optional — leave "" if no custom domain
