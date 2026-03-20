@@ -1,0 +1,25 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+venv/
+.venv/
+data/vectorstore/
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# Terraform
+deploy/terraform/.terraform/
+deploy/terraform/*.tfstate
+deploy/terraform/*.tfstate.backup
+deploy/terraform/terraform.tfvars
+deploy/terraform/.terraform.lock.hcl
+
+# SSH keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
